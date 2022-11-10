@@ -6,13 +6,15 @@
   <link href="style.css" rel="stylesheet" />
 </head>
 <body>
-  <h1>Log hier in</h1>
-  <input type="text" placeholder="E-mail" id="emailInput">
-  <br><br>
-  <input type="password" placeholder="Wachtwoord" id="passwordInput">
-  <br><br>
-  <button onclick="login()">Log in</button>
-  
+  <div style="display: flex; justify-content: center; align-items: center; text-align: center; min-height: 100vh;">
+    <h1>Log hier in</h1>
+    <input type="text" placeholder="E-mail" id="emailInput">
+    <br><br>
+    <input type="password" placeholder="Wachtwoord" id="passwordInput">
+    <br><br>
+    <button onclick="login()">Log in</button>
+  </div>
+    
   <script>
     function login() {
       var email = document.getElementById("emailInput").value;
