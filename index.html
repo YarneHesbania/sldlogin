@@ -6,13 +6,19 @@
   <link href="style.css" rel="stylesheet" />
 </head>
 <body>
-  <h1>Dit is een titel</h1>
-  <a>Dit is een tekst onder de titel</a>
+  <h1>Log hier in</h1>
+  <input type="text" placeholder="E-mail" id="emailInput">
+  <br>
+  <input type="text" placeholder="Wachtwoord" id="passwordInput">
+  <br>
   <button onclick="login()">Log in</button>
   
   <script>
     function login() {
-      alert("Testalert");
+      var email = document.getElementById("emailInput").value;
+      var password = document.getElementById("passwordInput").value;
+      
+      alert(email + " " + password);
     }
   </script>
 </body>
